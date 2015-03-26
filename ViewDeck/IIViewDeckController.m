@@ -999,6 +999,12 @@ static NSTimeInterval durationToAnimate(CGFloat pointsToAnimate, CGFloat velocit
     _viewAppeared = 0;
 }
 
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    [self applyCenterViewCornerRadiusAnimated:YES];
+}
+
 #pragma mark - Rotation IOS6
 
 - (BOOL)shouldAutorotate {
