@@ -1002,7 +1002,7 @@ static NSTimeInterval durationToAnimate(CGFloat pointsToAnimate, CGFloat velocit
 - (void)viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
-    [self applyCenterViewCornerRadiusAnimated:YES];
+    [self applyCenterViewCornerRadiusAnimated:NO];
 }
 
 #pragma mark - Rotation IOS6
